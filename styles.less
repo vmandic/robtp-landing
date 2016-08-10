@@ -1,39 +1,65 @@
 @mogy-blue: #161b27;
 @white: #fff;
+@highlight: #f99c25;
 
-html, body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.mix-border {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 0 0 2px #c0c0c0;
+}
+
+html, body, h1, h2, h3, h4, h5, p, div, span {
+    font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #eee;
+    background-image: url("img/mogy-texture.png");
+    background-size: 30%;
+    background-blend-mode: lighten;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
 }
 
 header, .header {
     background-color: @mogy-blue;
     height: auto;
     width: 100%;
-    padding: 30px 0;
+    padding: 25px 0;
     color: @white;
 
     img.mogy-logo {
-        margin-left: 20px;
-        margin-top: 15px;
+        margin-left: 30px;
+        margin-top: -5px;
+        max-width: 140px;
     }
 
     .header-title {
-        padding-right: 75px;
+        padding-right: 140px;
 
         h2.title {
+            font-family: 'Montserrat', sans-serif;
             font-size: 32px;
             margin: 0;
         }
 
         h5.subtitle {
-            font-size: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
             margin: 0;
         }
     }
 }
 
 main.container, .main-container {
-    margin-top: 30px;
+    padding-top: 40px;
+    background-color: @white;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px #c0c0c0;
+    border: 1px solid #eee;
 
     .left-side {
 
@@ -44,20 +70,66 @@ main.container, .main-container {
                 border: 4px solid @mogy-blue;
                 min-width: 218px;
                 min-height: 218px; 
+                box-shadow: 0 0 5px @mogy-blue;
+                border-radius: 4px;
+                margin: 0 0 20px 20px;
             }
 
             img.mogy-trainer-mark {
                 position: absolute;
-                bottom: 0;
-                right: 0;
+                bottom: -5px;
+                right: 45px;
+                width: 50px;
             }
         }
 
         .profile-social-links-container {
-            img {
-                width: 20px;
-                height: 20px;
-                // display: inline-block;
+            margin: 0 15px;
+
+            a {
+                margin: 5px 15px;
+                margin-left: 0;
+                font-size: 18px;
+                color: @mogy-blue;
+            }
+        }
+
+        .profile-loctaion-container {
+            margin: 30px 0;
+            margin-left: 10px;
+
+            h4 {
+                font-size: 12px;
+                font-weight: bold;
+            }
+            h3 {
+                font-size: 18px;
+                font-weight: 800;
+                margin-top: 6px;
+            }
+
+            .map-location-thumb {
+                margin-top: 15px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                height: 120px;
+                box-shadow: 0 0 5px #c0c0c0;
+            }
+        }
+
+        .aside-cta {
+            margin: 30px 0;
+            margin-left: 10px;
+            padding: 30px 0;
+            background-image: url("img/mogy-geometry-texture.png");
+            background-attachment: fixed;
+            background-color: #ddd;
+            .mix-border;
+
+            p {
+                font-weight: bold;
+                margin: 0 15px;
+                margin-bottom: 25px;
             }
         }
     }
@@ -69,21 +141,133 @@ main.container, .main-container {
 
             .profile-name {
                 position: relative;
-
+                h1 {
+                    font-weight: bold;
+                }
                 img.mogy-verified-mark {
                     position: absolute;
                     top: 0;
-                    right: -55px;
+                    right: -20px;
+                    width: 16px;
                 }
             }
         }
 
+        .profile-main-infos {
+            margin-left: -30px;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 800;
+            }
+        }
+
+        .profile-expertises {
+            margin-top: 30px;
+            margin-bottom: 60px;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                margin-left: -5px;
+
+                li {
+                    font-size: 12px;
+                    border: 2px solid @mogy-blue;
+                    border-radius: 4px;
+                    padding: 0 5px;
+                    margin: 5px;
+                    margin-right: 3px;
+                    font-weight: 800;
+                    display: inline-block;
+                    list-style: none;
+                }
+            }
+        }
+        
+        .profile-bio {
+            margin-bottom: 60px;
+
+            p {
+                line-height: 30px;
+                font-size: 15px;
+            }
+        }
+
+        .profile-pricing {
+            & > h4 {
+                margin-bottom: 20px;
+            }
+
+            .offers {
+                margin-left: -15px;
+
+                .price-box {
+                    text-align: center;
+                    min-height: 300px;
+                    height: 300px;
+                    .mix-border;
+
+                    h3 {
+                        font-weight: 800;
+                        margin: 20px 0;
+                        font-size: 21px;
+                    }
+
+                    h1 {
+                        font-weight: 600;
+                        font-size: 34px;
+
+                        span {
+                            font-size: 20px;
+                        }
+                    }
+
+                    ul {
+                        width: 70%;
+                        padding: 0;
+                        margin: 20px auto;
+                        text-align: left;
+
+                        li {
+                            background-image: url("img/mogy-check.png");
+                            background-repeat: no-repeat;
+                            background-position-y: 12px;
+                            font-size: 15px;
+                            line-height: 32px;
+                            font-weight: 600;
+                            text-align: left;
+                            text-indent: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom-cta{
+            margin: 30px 0;
+            margin-left: 10px;
+            padding: 30px 0;
+            background-image: url("img/mogy-geometry-texture.png");
+            background-attachment: fixed;
+            background-color: #ddd;
+            .mix-border;
+
+            p {
+                font-weight: bold;
+                margin: 0 15px;
+                margin-bottom: 25px;
+            }
+        }
+
         hr {
-            margin: 30 -15px;
+            margin: 20px -15px;
+            border-top-color: #ddd;
         }
 
         h1 {
             margin: 0;
+            font-size: 38px;
             font-weight: bold;
         }
 
@@ -94,6 +278,34 @@ main.container, .main-container {
         h3 {
             margin: 0;
         }
+
+        h4 {
+            font-size: 14px;
+            font-weight: 600;
+        }
     }
 
+}
+
+// BUTTON STYLES:
+.btn-contact-trainer {
+    font-size: 16px;
+    font-weight: 600;
+    border: 3px solid #f9c184;
+    background-color: @highlight;
+}
+
+.btn-cta-black {
+    font-size: 12px;
+    font-weight: 600;
+    color: @white;
+    border: 3px solid #878a91;
+    background-color: @mogy-blue;
+}
+
+.btn-cta-green {
+    font-size: 16px;
+    font-weight: 600;
+    border: 3px solid #f9c184;
+    background-color: @highlight;
 }

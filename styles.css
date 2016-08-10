@@ -1,37 +1,67 @@
+.mix-border {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 0 2px #c0c0c0;
+}
 html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+div,
+span {
+  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+}
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #eee;
+  background-image: url("img/mogy-texture.png");
+  background-size: 30%;
+  background-blend-mode: lighten;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
 }
 header,
 .header {
   background-color: #161b27;
   height: auto;
   width: 100%;
-  padding: 30px 0;
+  padding: 25px 0;
   color: #fff;
 }
 header img.mogy-logo,
 .header img.mogy-logo {
-  margin-left: 20px;
-  margin-top: 15px;
+  margin-left: 30px;
+  margin-top: -5px;
+  max-width: 140px;
 }
 header .header-title,
 .header .header-title {
-  padding-right: 75px;
+  padding-right: 140px;
 }
 header .header-title h2.title,
 .header .header-title h2.title {
+  font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   margin: 0;
 }
 header .header-title h5.subtitle,
 .header .header-title h5.subtitle {
-  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
   margin: 0;
 }
 main.container,
 .main-container {
-  margin-top: 30px;
+  padding-top: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px #c0c0c0;
+  border: 1px solid #eee;
 }
 main.container .left-side .profile-picture-container,
 .main-container .left-side .profile-picture-container {
@@ -42,17 +72,69 @@ main.container .left-side .profile-picture-container img.profile-picture,
   border: 4px solid #161b27;
   min-width: 218px;
   min-height: 218px;
+  box-shadow: 0 0 5px #161b27;
+  border-radius: 4px;
+  margin: 0 0 20px 20px;
 }
 main.container .left-side .profile-picture-container img.mogy-trainer-mark,
 .main-container .left-side .profile-picture-container img.mogy-trainer-mark {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -5px;
+  right: 45px;
+  width: 50px;
 }
-main.container .left-side .profile-social-links-container img,
-.main-container .left-side .profile-social-links-container img {
-  width: 20px;
-  height: 20px;
+main.container .left-side .profile-social-links-container,
+.main-container .left-side .profile-social-links-container {
+  margin: 0 15px;
+}
+main.container .left-side .profile-social-links-container a,
+.main-container .left-side .profile-social-links-container a {
+  margin: 5px 15px;
+  margin-left: 0;
+  font-size: 18px;
+  color: #161b27;
+}
+main.container .left-side .profile-loctaion-container,
+.main-container .left-side .profile-loctaion-container {
+  margin: 30px 0;
+  margin-left: 10px;
+}
+main.container .left-side .profile-loctaion-container h4,
+.main-container .left-side .profile-loctaion-container h4 {
+  font-size: 12px;
+  font-weight: bold;
+}
+main.container .left-side .profile-loctaion-container h3,
+.main-container .left-side .profile-loctaion-container h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 6px;
+}
+main.container .left-side .profile-loctaion-container .map-location-thumb,
+.main-container .left-side .profile-loctaion-container .map-location-thumb {
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 120px;
+  box-shadow: 0 0 5px #c0c0c0;
+}
+main.container .left-side .aside-cta,
+.main-container .left-side .aside-cta {
+  margin: 30px 0;
+  margin-left: 10px;
+  padding: 30px 0;
+  background-image: url("img/mogy-geometry-texture.png");
+  background-attachment: fixed;
+  background-color: #ddd;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 0 2px #c0c0c0;
+}
+main.container .left-side .aside-cta p,
+.main-container .left-side .aside-cta p {
+  font-weight: bold;
+  margin: 0 15px;
+  margin-bottom: 25px;
 }
 main.container .right-side,
 .main-container .right-side {
@@ -62,26 +144,166 @@ main.container .right-side .profile-headline .profile-name,
 .main-container .right-side .profile-headline .profile-name {
   position: relative;
 }
+main.container .right-side .profile-headline .profile-name h1,
+.main-container .right-side .profile-headline .profile-name h1 {
+  font-weight: bold;
+}
 main.container .right-side .profile-headline .profile-name img.mogy-verified-mark,
 .main-container .right-side .profile-headline .profile-name img.mogy-verified-mark {
   position: absolute;
   top: 0;
-  right: -55px;
+  right: -20px;
+  width: 16px;
+}
+main.container .right-side .profile-main-infos,
+.main-container .right-side .profile-main-infos {
+  margin-left: -30px;
+}
+main.container .right-side .profile-main-infos h3,
+.main-container .right-side .profile-main-infos h3 {
+  font-size: 18px;
+  font-weight: 800;
+}
+main.container .right-side .profile-expertises,
+.main-container .right-side .profile-expertises {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+main.container .right-side .profile-expertises ul,
+.main-container .right-side .profile-expertises ul {
+  margin: 0;
+  padding: 0;
+  margin-left: -5px;
+}
+main.container .right-side .profile-expertises ul li,
+.main-container .right-side .profile-expertises ul li {
+  font-size: 12px;
+  border: 2px solid #161b27;
+  border-radius: 4px;
+  padding: 0 5px;
+  margin: 5px;
+  margin-right: 3px;
+  font-weight: 800;
+  display: inline-block;
+  list-style: none;
+}
+main.container .right-side .profile-bio,
+.main-container .right-side .profile-bio {
+  margin-bottom: 60px;
+}
+main.container .right-side .profile-bio p,
+.main-container .right-side .profile-bio p {
+  line-height: 30px;
+  font-size: 15px;
+}
+main.container .right-side .profile-pricing > h4,
+.main-container .right-side .profile-pricing > h4 {
+  margin-bottom: 20px;
+}
+main.container .right-side .profile-pricing .offers,
+.main-container .right-side .profile-pricing .offers {
+  margin-left: -15px;
+}
+main.container .right-side .profile-pricing .offers .price-box,
+.main-container .right-side .profile-pricing .offers .price-box {
+  text-align: center;
+  min-height: 300px;
+  height: 300px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 0 2px #c0c0c0;
+}
+main.container .right-side .profile-pricing .offers .price-box h3,
+.main-container .right-side .profile-pricing .offers .price-box h3 {
+  font-weight: 800;
+  margin: 20px 0;
+  font-size: 21px;
+}
+main.container .right-side .profile-pricing .offers .price-box h1,
+.main-container .right-side .profile-pricing .offers .price-box h1 {
+  font-weight: 600;
+  font-size: 34px;
+}
+main.container .right-side .profile-pricing .offers .price-box h1 span,
+.main-container .right-side .profile-pricing .offers .price-box h1 span {
+  font-size: 20px;
+}
+main.container .right-side .profile-pricing .offers .price-box ul,
+.main-container .right-side .profile-pricing .offers .price-box ul {
+  width: 70%;
+  padding: 0;
+  margin: 20px auto;
+  text-align: left;
+}
+main.container .right-side .profile-pricing .offers .price-box ul li,
+.main-container .right-side .profile-pricing .offers .price-box ul li {
+  background-image: url("img/mogy-check.png");
+  background-repeat: no-repeat;
+  background-position-y: 12px;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: left;
+  text-indent: 20px;
+}
+main.container .right-side .bottom-cta,
+.main-container .right-side .bottom-cta {
+  margin: 30px 0;
+  margin-left: 10px;
+  padding: 30px 0;
+  background-image: url("img/mogy-geometry-texture.png");
+  background-attachment: fixed;
+  background-color: #ddd;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 0 2px #c0c0c0;
+}
+main.container .right-side .bottom-cta p,
+.main-container .right-side .bottom-cta p {
+  font-weight: bold;
+  margin: 0 15px;
+  margin-bottom: 25px;
 }
 main.container .right-side hr,
 .main-container .right-side hr {
-  margin: 30 -15px;
+  margin: 20px -15px;
+  border-top-color: #ddd;
 }
-main.container h1,
-.main-container h1 {
+main.container .right-side h1,
+.main-container .right-side h1 {
   margin: 0;
+  font-size: 38px;
   font-weight: bold;
 }
-main.container h2,
-.main-container h2 {
+main.container .right-side h2,
+.main-container .right-side h2 {
   margin: 0;
 }
-main.container h3,
-.main-container h3 {
+main.container .right-side h3,
+.main-container .right-side h3 {
   margin: 0;
+}
+main.container .right-side h4,
+.main-container .right-side h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.btn-contact-trainer {
+  font-size: 16px;
+  font-weight: 600;
+  border: 3px solid #f9c184;
+  background-color: #f99c25;
+}
+.btn-cta-black {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  border: 3px solid #878a91;
+  background-color: #161b27;
+}
+.btn-cta-green {
+  font-size: 16px;
+  font-weight: 600;
+  border: 3px solid #f9c184;
+  background-color: #f99c25;
 }

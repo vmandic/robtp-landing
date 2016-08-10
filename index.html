@@ -11,20 +11,17 @@
     <title>Rob's Landing Page</title>
 
     <!-- STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <!-- /STYLES -->
-
-    <!-- SCRIPTS -->
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script defer>
-    </script>
-    <!-- /SCRIPTS -->
 </head>
 
 <body>
     <header class="header">
-        <img alt="Mogy logo" class="mogy-logo pull-left" />
+        <img src="img/mogy-logo-white.png" alt="Mogy logo" class="img-responsive mogy-logo pull-left" />
         <div class="header-title text-center">
             <h2 class="title">MOGY TRAINERS</h2>
             <h5 class="subtitle">Supporting trainers going beyond limits</h5>
@@ -35,30 +32,28 @@
         <aside class="left-side col-lg-3">
 
             <figure class="row profile-picture-container">
-                <img class="profile-picture" alt="Mogy trainer profile picture - Rob MacIntyre" />
-                <img class="mogy-trainer-mark" alt="Verified mogy trainer mark" />
+                <img src="img/mogy-rob-macintyre.jpg" class="profile-picture img-responsive" alt="Mogy trainer profile picture - Rob MacIntyre" />
+                <img src="img/mogy-logomark.png" class="mogy-trainer-mark img-responsive" alt="Verified mogy trainer mark" />
             </figure>
 
             <nav class="row profile-social-links-container">
-                <img alt="facebook image link" />
-                <img alt="twitter image link" />
-                <img alt="linkedin image link" />
-                <img alt="website image link" />
+                <a href="#"><i class="fa fa-facebook-f fa-lg"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                <a href="#"><i class="fa fa-link fa-lg"></i></a>
             </nav>
 
             <div class="row profile-loctaion-container">
                 <h4>BASE GYM</h4>
-                <h3 class="profile-business-name">Hard Nocks South Gym</h3>
-                <div class="map-location-thumb">
-                    <span id="bizMapLocation"></span>
-                </div>
+                <h3>Hard Nocks South Gym</h3>
+                <div class="map-location-thumb"></div>
             </div>
 
-            <div class="row aside-cta">
+            <div class="row aside-cta text-center">
                 <p>
                     Want Mogy to help you with your professional exposure?
                 </p>
-                <a class="btn btn-primary btn-cta-black">Setup your FREE Trainer Profile!</a>
+                <a class="btn btn-default btn-cta-black" href="#">Setup your FREE Trainer Profile!</a>
             </div>
 
         </aside>
@@ -68,11 +63,11 @@
             <section class="row profile-headline">
                 <div class="profile-name pull-left">
                     <h1>Rob MacIntyre</h1>
-                    <img class="mogy-verified-mark" alt="mogy-verified-mark" />
+                    <img src="img/mogy-check-hex.png" class="mogy-verified-mark" alt="mogy-verified-mark" />
                 </div>
                 <div class="pull-right">
                     <button type="button" id="btnContactTrainer" class="btn btn-success btn-contact-trainer">
-                        <img alt="contact trainer" />
+                        <img src="img/mogy-contact-mail.png" alt="contact trainer" />
                         CONTACT TRAINER
                     </button>
                 </div>
@@ -118,35 +113,41 @@
             <section class="row profile-pricing">
                 <h4>HIRE A TRAINER VIA MOGY</h4>
                 <div class="offers">
-                    <article class="col-lg-4 price-box">
-                        <h3>BASIC</h3>
-                        <h1>$100/mo</h1>
-                        <ul class="price-feature-list">
-                            <li>5 Trainings</li>
-                            <li>1 Month meal mlan</li>
-                            <li>Online coaching</li>
-                        </ul>
+                    <article class="col-lg-4">
+                        <div class="price-box">
+                            <h3>BASIC</h3>
+                            <h1>$100/<span>mo</span></h1>
+                            <ul class="price-feature-list">
+                                <li>5 Trainings</li>
+                                <li>1 Month meal mlan</li>
+                                <li>Online coaching</li>
+                            </ul>
+                        </div>
                     </article>
-                    <article class="col-lg-4 price-box">
-                        <h3>ADVANCED</h3>
-                        <h1>$250/mo</h1>
-                        <ul class="price-feature-list">
-                            <li>10 Trainings</li>
-                            <li>2 Month meal plan</li>
-                            <li>Online coaching</li>
-                            <li>Result tracking</li>
-                        </ul>
+                    <article class="col-lg-4">
+                        <div class="price-box">
+                            <h3>ADVANCED</h3>
+                            <h1>$250/<span>mo</span></h1>
+                            <ul class="price-feature-list">
+                                <li>10 Trainings</li>
+                                <li>2 Month meal plan</li>
+                                <li>Online coaching</li>
+                                <li>Result tracking</li>
+                            </ul>
+                        </div>
                     </article>
-                    <article class="col-lg-4 price-box">
-                        <h3>PROFESSIONAL</h3>
-                        <h1>$500/mo</h1>
-                        <ul class="price-feature-list">
-                            <li>Unlimited trainings</li>
-                            <li>12 Month meal plan</li>
-                            <li>Online coaching</li>
-                            <li>Skype consulting</li>
-                            <li>Result tracking</li>
-                        </ul>
+                    <article class="col-lg-4">
+                        <div class="price-box">
+                            <h3>PROFESSIONAL</h3>
+                            <h1>$500/<span>mo</span></h1>
+                            <ul class="price-feature-list">
+                                <li>Unlimited trainings</li>
+                                <li>12 Month meal plan</li>
+                                <li>Online coaching</li>
+                                <li>Skype consulting</li>
+                                <li>Result tracking</li>
+                            </ul>
+                        </div>
                     </article>
                 </div>
             </section>
@@ -183,12 +184,12 @@
 
             <section class="row bottom-cta">
                 <div class="col-lg-9">
-                    <h2>Looking for the perfect companion app to handle all your clients and their training assignments?</h2>
+                    <p>Looking for the perfect companion app to handle all your clients and their training assignments?</p>
                     <h1>You're in the right place!</h1>
                 </div>
                 <div class="col-lg-3">
                     <a href="#" role="button" class="btn btn-success btn-cta-green">
-                        <img alt="test drive Mogy" /> TEST DRIVE MOGY
+                        <img src="img/mogy-logomark-white.png" alt="test drive Mogy" /> TEST DRIVE MOGY
                     </a>
                 </div>
             </section>
@@ -196,6 +197,10 @@
 
     </main>
 
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" defer crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- /SCRIPTS -->
 </body>
 
 </html>
