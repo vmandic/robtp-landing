@@ -1,0 +1,29 @@
+{
+  "name": "robtp-landing",
+  "version": "1.0.0",
+  "description": "Mogy.me Trainers Profile Page for Rob MacIntyre",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "t"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vmandic/robtp-landing.git"
+  },
+  "keywords": [
+    "mogy"
+  ],
+  "author": "Vedran Mandić (Mogy.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vmandic/robtp-landing/issues"
+  },
+  "homepage": "https://github.com/vmandic/robtp-landing"
+}
