@@ -295,12 +295,12 @@ main.container .right-side .profile-media-gallery ul.media-list,
 }
 main.container .right-side .profile-media-gallery ul.media-list li,
 .main-container .right-side .profile-media-gallery ul.media-list li {
-  min-height: 140px;
   background-color: #eee;
   border-radius: 2px;
   border: 1px solid #ddd;
   margin: 0.8%;
   text-align: center;
+  width: 23%;
 }
 main.container .right-side .profile-media-gallery ul.media-list li:hover,
 .main-container .right-side .profile-media-gallery ul.media-list li:hover {
