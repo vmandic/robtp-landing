@@ -13,5 +13,4 @@ app.get('/styles.min.css', function (req, res) {
 
 app.use("/img", express.static(__dirname + '/img'));
 
-app.listen(3000);
-console.log("Running at Port 3000");
+app.listen(80);
