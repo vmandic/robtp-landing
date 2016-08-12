@@ -13,4 +13,4 @@ app.get('/styles.min.css', function (req, res) {
 
 app.use("/img", express.static(__dirname + '/img'));
 
-app.listen(80);
+app.listen(3001);
