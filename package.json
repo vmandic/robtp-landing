@@ -2,7 +2,7 @@
   "name": "robtp-landing",
   "version": "1.0.0",
   "description": "Mogy.me Trainers Profile Page for Rob MacIntyre",
-  "main": "public/app.js",
+  "main": "app.js",
   "dependencies": {
     "express": "^4.14.0",
     "gulp": "^3.9.1",
@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node public/app.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
