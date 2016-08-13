@@ -1,28 +1,28 @@
-// Less configuration
-var gulp = require('gulp');
-var less = require('gulp-less');
-var cleanCSS = require('gulp-clean-css');
-var rename = require('gulp-rename');
+var gulp = require("gulp"),
+    less = require("gulp-less"),
+    cleanCSS = require("gulp-clean-css"),
+    rename = require("gulp-rename");
 
-gulp.task('less', function() {
-    gulp.src('*.less')
+gulp.task("lessAndMinify", function() {
+    gulp.src("../source/css/*.less")
         .pipe(less())
+        .pipe(gulp.dest(function(f) {
+            return f.base;
+        }))
+        .pipe(cleanCSS({ compatibility: "ie8" }))
+        .pipe(rename({ suffix: ".min" }))
         .pipe(gulp.dest(function(f) {
             return f.base;
         }));
 });
 
-gulp.task('default', ['less'], function() {
-    gulp.watch('*.less', ['less']);
-    console.log("Lessifyed...");
-    
-    gulp.watch('*.css', ['minify-css']);
-    console.log("CSS minified...");
+gulp.task("toPublic", function() {
+    gulp.src(["../source/*.html"]).pipe(gulp.dest("../public"));
+    gulp.src(["../source/css/styles.min.css"]).pipe(gulp.dest("../public"));
+    gulp.src(["../source/img/*"]).pipe(gulp.dest("../public/img"));
 });
 
-gulp.task('minify-css', function() {
-  return gulp.src('../styles.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('..'));
+gulp.task("watch", function() {
+    gulp.watch("../source/css/*.less", ["lessAndMinify"]);
+    gulp.watch("../source/**/*.*", ["toPublic"]);
 });
